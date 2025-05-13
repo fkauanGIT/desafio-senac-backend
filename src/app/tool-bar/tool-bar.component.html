@@ -1,0 +1,38 @@
+<section class="toolbar">
+  <div class="toolbar-logo">
+    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+         class="bi bi-code-slash" viewBox="0 0 16 16">
+      <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 
+               3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 
+               8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+    </svg>
+    <h3>Protótipo</h3>
+  </div>
+  <div class="toolbar-links">
+    <ul>
+      <li><button class="toolbar-link" type="button" (click)="toggleAcessibilidade()">Acessibilidade</button></li>
+      <li><a class="toolbar-link" href="#">Entrar</a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="acessibility" *ngIf="mostrarAcessibilidade">
+  <div class="acessibility-page">
+    <h3>Conteúdo</h3>
+    <div class="acessibility-page-grid">
+      <div class="acessibility-page-grid-content">
+        <h3>Texto Maior</h3>
+        <button type="button" (click)="aumentarTexto()">Aumentar Texto</button>
+        <button type="button" (click)="diminuirTexto()">Diminuir Texto</button>
+      </div>
+    </div>
+
+    <h3>Cor e Tela</h3>
+    <div class="acessibility-page-grid">
+      <div class="acessibility-page-grid-content">
+        <h3>Modo Tela Escura</h3>
+        <button type="button" (click)="toggleModoEscuro()">Ativar Modo Escuro</button>
+      </div>
+    </div>
+  </div>
+</section>

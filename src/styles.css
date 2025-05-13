@@ -1,1 +1,40 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+app-root {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+/* Estilo para Modo Escuro */
+body.modo-escuro {
+  background-color: #121212;
+}
+body.modo-escuro p {
+   color: #fff;
+}
+
+/* Estilo para Texto Maior */
+body.texto-maior {
+  font-size: 1.2em; /* Aumenta o texto em 20% */
+}
+
+/* Você pode ajustar especificamente elementos se quiser */
+body.texto-maior h1,
+body.texto-maior p,
+body.texto-maior span {
+  font-size: 1.2em;
+}
